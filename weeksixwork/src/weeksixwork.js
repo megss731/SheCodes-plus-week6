@@ -27,21 +27,21 @@ function changeTempCity(response) {
 }
 let form = document.querySelector("form");
 form.addEventListener("submit", replaceCity);
-navigator.geolocation.getCurrentPosition(getCurrentLatLon);
-function getCurrentLatLon(currentTemp) {
-  let lat = currentTemp.coords.latitude;
-  let lon = currentTemp.coords.longitude;
-  axios
-    .get(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}`)
-    .then(getCurrentTemp);
-}
-function getCurrentTemp(currentConditions) {
-  let getLocalTemp = Math.round(currentConditions.data.main.temp);
-  let localTemp = document.querySelector(".fahrenheit-main");
-  localTemp.innerHTML = getLocalTemp;
-  axios
-    .get(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}`)
-    .then(changeTempCity);
-}
-let currentButton = document.querySelector(".current-conditions");
-currentButton.addEventListener("click", getCurrentLatLon);
+// navigator.geolocation.getCurrentPosition(getCurrentLatLon);
+// function getCurrentLatLon(currentTemp) {
+//   let lat = currentTemp.coords.latitude;
+//   let lon = currentTemp.coords.longitude;
+//   axios
+//     .get(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}`)
+//     .then(getCurrentTemp);
+// }
+// function getCurrentTemp(currentConditions) {
+//   let getLocalTemp = Math.round(currentConditions.data.main.temp);
+//   let localTemp = document.querySelector(".fahrenheit-main");
+//   localTemp.innerHTML = getLocalTemp;
+//   axios
+//     .get(`${apiUrl}lat=${lat}&lon=${lon}&appid=${apiKey}`)
+//     .then(changeTempCity);
+// }
+// let currentButton = document.querySelector(".current-conditions");
+// currentButton.addEventListener("click", getCurrentLatLon);
