@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weatherly</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/weatherapp.css" />
+    <script
+      src="https://kit.fontawesome.com/906e1d50d9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row today">
+        <div class="col-3">
+          <span id="city" style="text-transform: capitalize"> Durham </span>
+          <br />
+          <span id="date-time"> Date and Time </span>
+        </div>
+        <div class="col-3 temp">
+          <span class="fahrenheit" type="number">82</span>°<span class="f"
+            >F</span
+          >
+          |<span class="celsius"
+            ><a href="#" id="change-unit" onclick="fToC()"
+              >°<span class="c">C</span></a
+            ></span
+          >
+        </div>
+        <div class="col-2 sun-icon">
+          <i class="far fa-sun"></i>
+        </div>
+        <div class="col-2">
+          <button class="current-conditions">Current</button>
+        </div>
+      </div>
+      <div class="row week">
+        <div class="col-3 saturday">
+          Saturday
+          <br />
+          🌧
+          <br />
+          <span class="fahrenheit" type="number">70</span>°F |<span
+            class="celsius"
+            >°C</span
+          >
+        </div>
+        <div class="col-3 sunday">
+          Sunday
+          <br />
+          🌥
+          <br />
+          <span class="fahrenheit" type="number">68</span>°F |<span
+            class="celsius"
+            >°C</span
+          >
+        </div>
+        <div class="col-3 monday">
+          Monday
+          <br />
+          ☀
+          <br />
+          <span class="fahrenheit" type="number">75</span>°F |<span
+            class="celsius"
+            >°C</span
+          >
+        </div>
+      </div>
+      <div class="row week2">
+        <div class="col-3 tuesday">
+          Tuesday
+          <br />
+          🌤
+          <br />
+          <span class="fahrenheit" type="number">70</span>°F |<span
+            class="celsius"
+            >°C</span
+          >
+        </div>
+        <div class="col-3 wednesday">
+          Wednesday
+          <br />
+          🌧
+          <br />
+          <span class="fahrenheit" type="number">78</span>°F |<span
+            class="celsius"
+            >°C</span
+          >
+        </div>
+      </div>
+      <form>
+        <input
+          type="search"
+          placeholder="city"
+          id="city-search"
+          style="text-transform: capitalize"
+        />
+        <button class="search-button">Search</button>
+      </form>
+    </div>
+    <script src="src/weatherapp.js"></script>
+  </body>
+</html>
