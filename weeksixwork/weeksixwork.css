@@ -1,0 +1,63 @@
+.today {
+  border: 3px solid lightseagreen;
+  border-radius: 9px;
+  margin: 20px 0;
+  max-width: fit-content;
+}
+.temp,
+.sun-icon {
+  line-height: 40px;
+}
+.current-conditions {
+  color: lightseagreen;
+  background: white;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: darkcyan;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+.current-conditions:hover {
+  background: darkcyan;
+  border-color: white;
+  color: white;
+  transition: all 200ms ease-in-out;
+  cursor: grabbing;
+}
+.sun-icon {
+  color: darkgoldenrod;
+  font-size: 30px;
+}
+.saturday,
+.sunday,
+.monday,
+.tuesday,
+.wednesday {
+  text-align: center;
+  border: 2px solid darkgreen;
+  border-radius: 9px;
+  background: darkgreen;
+  color: white;
+  font-size: large;
+  margin: 10px;
+  max-width: 150px;
+}
+form {
+  font-size: 21px;
+}
+.search-button {
+  color: lightseagreen;
+  background: white;
+  border-style: solid;
+  border-radius: 20px;
+  border-color: darkcyan;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+.search-button:hover {
+  background: darkcyan;
+  border-color: white;
+  color: white;
+  transition: all 200ms ease-in-out;
+  cursor: grabbing;
+}
